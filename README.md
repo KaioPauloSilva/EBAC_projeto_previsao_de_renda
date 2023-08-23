@@ -4,7 +4,7 @@ Este é um projeto proposto pela EBAC, no curso de Cientista de Dados.
 
 O objetivo deste projeto é com base nos dados fornecidos, analisar qual fator influenciara na renda da população e possibilitar predizer, qual será a previsão de renda.
 
-Video Streamlit:
+
 
 
 
