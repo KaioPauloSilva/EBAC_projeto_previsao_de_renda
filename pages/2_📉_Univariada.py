@@ -5,7 +5,7 @@ import seaborn as sns
 import numpy as np
 
 st.set_page_config(
-    page_title='Previsão de renda',
+    page_title='Univariada - Previsão de renda',
     page_icon='💲',
 )
 

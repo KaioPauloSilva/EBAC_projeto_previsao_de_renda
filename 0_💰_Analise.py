@@ -1,10 +1,14 @@
 import streamlit as st
+import pandas as pd
 
 st.set_page_config(
      page_title="Previsão de renda",
      page_icon='💲',
      layout="wide",
 )
+
+renda = pd.read_csv('./input/previsao_de_renda.csv')
+renda = renda.drop(['Unnamed: 0'], axis=1)
 
 st.write('# Análise exploratória da previsão de renda')
 

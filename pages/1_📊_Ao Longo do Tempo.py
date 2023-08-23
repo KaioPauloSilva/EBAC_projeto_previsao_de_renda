@@ -4,10 +4,9 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 st.set_page_config(
-     page_title='EBAC - Previsão de Renda',
-     page_icon='',
+     page_title='Ao Longo do Tempo - Previsão de Renda',
+     page_icon='💲',
      layout='wide',
-     initial_sidebar_state='auto'
 )
 
 st.markdown('### Gráficos ao longo do tempo')
@@ -38,8 +37,9 @@ if opcao_pi:
      st.write('Grafico posse_de_imovel x renda')
      sns.lineplot(x='data_ref', y='renda',hue='posse_de_imovel', data=renda)
      plt.tick_params(axis='x', rotation=45)
-     sns.despine()
-     st.pyplot(plt)
+     with st.spinner('Aguarde...'):
+          sns.despine()
+          st.pyplot(plt)
 
 if opcao_pv:
      plt.close('all')
@@ -47,8 +47,9 @@ if opcao_pv:
      st.write('Grafico posse_de_veiculo x renda')
      sns.lineplot(x='data_ref', y='renda', hue='posse_de_veiculo', data=renda)
      plt.tick_params(axis='x', rotation=45)
-     sns.despine()
-     st.pyplot(plt)
+     with st.spinner('Aguarde...'):
+          sns.despine()
+          st.pyplot(plt)
 
 if opcao_qtd_fi:
      plt.close('all')
@@ -56,8 +57,9 @@ if opcao_qtd_fi:
      st.write('Grafico qtd_filhos x renda')
      sns.lineplot(x='data_ref', y='renda', hue='qtd_filhos', data=renda)
      plt.tick_params(axis='x', rotation=45)
-     sns.despine()
-     st.pyplot(plt)
+     with st.spinner('Aguarde...'):
+          sns.despine()
+          st.pyplot(plt)
 
 if opcao_tr:
      plt.close('all')
@@ -65,8 +67,9 @@ if opcao_tr:
      st.write('Grafico tipo_renda x renda')
      sns.lineplot(x='data_ref', y='renda', hue='tipo_renda', data=renda)
      plt.tick_params(axis='x', rotation=45)
-     sns.despine()
-     st.pyplot(plt)
+     with st.spinner('Aguarde...'):
+          sns.despine()
+          st.pyplot(plt)
 
 if opcao_edu:
      plt.close('all')
@@ -74,8 +77,9 @@ if opcao_edu:
      st.write('Grafico educacao x renda')
      sns.lineplot(x='data_ref', y='renda', hue='educacao', data=renda)
      plt.tick_params(axis='x', rotation=45)
-     sns.despine()
-     st.pyplot(plt)
+     with st.spinner('Aguarde...'):
+          sns.despine()
+          st.pyplot(plt)
 
 if opcao_ec:
      plt.close('all')
@@ -83,8 +87,9 @@ if opcao_ec:
      st.write('Grafico estado_civil x renda')
      sns.lineplot(x='data_ref', y='renda', hue='estado_civil', data=renda)
      plt.tick_params(axis='x', rotation=45)
-     sns.despine()
-     st.pyplot(plt)
+     with st.spinner('Aguarde...'):
+          sns.despine()
+          st.pyplot(plt)
 
 if opcao_tipo_r:
      plt.close('all')
@@ -92,5 +97,6 @@ if opcao_tipo_r:
      st.write('Grafico tipo_residencia x renda')
      sns.lineplot(x='data_ref', y='renda', hue='tipo_residencia', data=renda)
      plt.tick_params(axis='x', rotation=45)
-     sns.despine()
-     st.pyplot(plt)
+     with st.spinner('Aguarde...'):
+          sns.despine()
+          st.pyplot(plt)
